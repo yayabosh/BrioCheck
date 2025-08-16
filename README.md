@@ -26,6 +26,7 @@ Clone this repository:
 ```bash
 git clone https://github.com/yayabosh/BrioCheck.git
 cd BrioCheck
+```
 
 Open BrioCheck.xcodeproj or BrioCheck.xcworkspace in Xcode and run the app on a simulator or a device.
 
