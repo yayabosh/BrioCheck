@@ -6,42 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		617330172DEA4D8F001657D0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 617330162DEA4D8F001657D0 /* FirebaseAnalytics */; };
+		617330192DEA4D8F001657D0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 617330182DEA4D8F001657D0 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		61FF60F52DE65867004CB07E /* PBXContainerItemProxy */ = {
+		61FF61282DE65D76004CB07E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 61FF60DE2DE65866004CB07E /* Project object */;
+			containerPortal = 61FF61122DE65D75004CB07E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 61FF60E52DE65866004CB07E;
+			remoteGlobalIDString = 61FF61192DE65D75004CB07E;
 			remoteInfo = BrioCheck;
 		};
-		61FF60FF2DE65867004CB07E /* PBXContainerItemProxy */ = {
+		61FF61322DE65D76004CB07E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 61FF60DE2DE65866004CB07E /* Project object */;
+			containerPortal = 61FF61122DE65D75004CB07E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 61FF60E52DE65866004CB07E;
+			remoteGlobalIDString = 61FF61192DE65D75004CB07E;
 			remoteInfo = BrioCheck;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		61FF60E62DE65866004CB07E /* BrioCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrioCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		61FF60F42DE65867004CB07E /* BrioCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrioCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61FF60FE2DE65867004CB07E /* BrioCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrioCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61FF614D2DE65D77004CB07E /* BrioCheck.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BrioCheck.xcodeproj; sourceTree = "<group>"; };
+		61FF611A2DE65D75004CB07E /* BrioCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrioCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FF61272DE65D76004CB07E /* BrioCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrioCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FF61312DE65D76004CB07E /* BrioCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrioCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		61FF60E82DE65866004CB07E /* BrioCheck */ = {
+		61FF611C2DE65D75004CB07E /* BrioCheck */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BrioCheck;
 			sourceTree = "<group>";
 		};
-		61FF60F72DE65867004CB07E /* BrioCheckTests */ = {
+		61FF612A2DE65D76004CB07E /* BrioCheckTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BrioCheckTests;
 			sourceTree = "<group>";
 		};
-		61FF61012DE65867004CB07E /* BrioCheckUITests */ = {
+		61FF61342DE65D76004CB07E /* BrioCheckUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BrioCheckUITests;
 			sourceTree = "<group>";
@@ -49,21 +53,23 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		61FF60E32DE65866004CB07E /* Frameworks */ = {
+		61FF61172DE65D75004CB07E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617330172DEA4D8F001657D0 /* FirebaseAnalytics in Frameworks */,
+				617330192DEA4D8F001657D0 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FF61242DE65D76004CB07E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FF60F12DE65867004CB07E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61FF60FB2DE65867004CB07E /* Frameworks */ = {
+		61FF612E2DE65D76004CB07E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,29 +79,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61FF60DD2DE65866004CB07E = {
+		617330142DEA4BE1001657D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				61FF60E82DE65866004CB07E /* BrioCheck */,
-				61FF60F72DE65867004CB07E /* BrioCheckTests */,
-				61FF61012DE65867004CB07E /* BrioCheckUITests */,
-				61FF60E72DE65866004CB07E /* Products */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61FF61112DE65D75004CB07E = {
+			isa = PBXGroup;
+			children = (
+				61FF611C2DE65D75004CB07E /* BrioCheck */,
+				61FF612A2DE65D76004CB07E /* BrioCheckTests */,
+				61FF61342DE65D76004CB07E /* BrioCheckUITests */,
+				617330142DEA4BE1001657D0 /* Frameworks */,
+				61FF611B2DE65D75004CB07E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		61FF60E72DE65866004CB07E /* Products */ = {
+		61FF611B2DE65D75004CB07E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61FF60E62DE65866004CB07E /* BrioCheck.app */,
-				61FF60F42DE65867004CB07E /* BrioCheckTests.xctest */,
-				61FF60FE2DE65867004CB07E /* BrioCheckUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		61FF614E2DE65D77004CB07E /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				61FF611A2DE65D75004CB07E /* BrioCheck.app */,
+				61FF61272DE65D76004CB07E /* BrioCheckTests.xctest */,
+				61FF61312DE65D76004CB07E /* BrioCheckUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,140 +110,139 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61FF60E52DE65866004CB07E /* BrioCheck */ = {
+		61FF61192DE65D75004CB07E /* BrioCheck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61FF61082DE65867004CB07E /* Build configuration list for PBXNativeTarget "BrioCheck" */;
+			buildConfigurationList = 61FF613B2DE65D76004CB07E /* Build configuration list for PBXNativeTarget "BrioCheck" */;
 			buildPhases = (
-				61FF60E22DE65866004CB07E /* Sources */,
-				61FF60E32DE65866004CB07E /* Frameworks */,
-				61FF60E42DE65866004CB07E /* Resources */,
+				61FF61162DE65D75004CB07E /* Sources */,
+				61FF61172DE65D75004CB07E /* Frameworks */,
+				61FF61182DE65D75004CB07E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				61FF60E82DE65866004CB07E /* BrioCheck */,
+				61FF611C2DE65D75004CB07E /* BrioCheck */,
 			);
 			name = BrioCheck;
 			packageProductDependencies = (
+				617330162DEA4D8F001657D0 /* FirebaseAnalytics */,
+				617330182DEA4D8F001657D0 /* FirebaseFirestore */,
 			);
 			productName = BrioCheck;
-			productReference = 61FF60E62DE65866004CB07E /* BrioCheck.app */;
+			productReference = 61FF611A2DE65D75004CB07E /* BrioCheck.app */;
 			productType = "com.apple.product-type.application";
 		};
-		61FF60F32DE65867004CB07E /* BrioCheckTests */ = {
+		61FF61262DE65D76004CB07E /* BrioCheckTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61FF610B2DE65867004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckTests" */;
+			buildConfigurationList = 61FF613E2DE65D76004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckTests" */;
 			buildPhases = (
-				61FF60F02DE65867004CB07E /* Sources */,
-				61FF60F12DE65867004CB07E /* Frameworks */,
-				61FF60F22DE65867004CB07E /* Resources */,
+				61FF61232DE65D76004CB07E /* Sources */,
+				61FF61242DE65D76004CB07E /* Frameworks */,
+				61FF61252DE65D76004CB07E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				61FF60F62DE65867004CB07E /* PBXTargetDependency */,
+				61FF61292DE65D76004CB07E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				61FF60F72DE65867004CB07E /* BrioCheckTests */,
+				61FF612A2DE65D76004CB07E /* BrioCheckTests */,
 			);
 			name = BrioCheckTests;
 			packageProductDependencies = (
 			);
 			productName = BrioCheckTests;
-			productReference = 61FF60F42DE65867004CB07E /* BrioCheckTests.xctest */;
+			productReference = 61FF61272DE65D76004CB07E /* BrioCheckTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		61FF60FD2DE65867004CB07E /* BrioCheckUITests */ = {
+		61FF61302DE65D76004CB07E /* BrioCheckUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61FF610E2DE65867004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckUITests" */;
+			buildConfigurationList = 61FF61412DE65D76004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckUITests" */;
 			buildPhases = (
-				61FF60FA2DE65867004CB07E /* Sources */,
-				61FF60FB2DE65867004CB07E /* Frameworks */,
-				61FF60FC2DE65867004CB07E /* Resources */,
+				61FF612D2DE65D76004CB07E /* Sources */,
+				61FF612E2DE65D76004CB07E /* Frameworks */,
+				61FF612F2DE65D76004CB07E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				61FF61002DE65867004CB07E /* PBXTargetDependency */,
+				61FF61332DE65D76004CB07E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				61FF61012DE65867004CB07E /* BrioCheckUITests */,
+				61FF61342DE65D76004CB07E /* BrioCheckUITests */,
 			);
 			name = BrioCheckUITests;
 			packageProductDependencies = (
 			);
 			productName = BrioCheckUITests;
-			productReference = 61FF60FE2DE65867004CB07E /* BrioCheckUITests.xctest */;
+			productReference = 61FF61312DE65D76004CB07E /* BrioCheckUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		61FF60DE2DE65866004CB07E /* Project object */ = {
+		61FF61122DE65D75004CB07E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					61FF60E52DE65866004CB07E = {
+					61FF61192DE65D75004CB07E = {
 						CreatedOnToolsVersion = 16.3;
 					};
-					61FF60F32DE65867004CB07E = {
+					61FF61262DE65D76004CB07E = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 61FF60E52DE65866004CB07E;
+						TestTargetID = 61FF61192DE65D75004CB07E;
 					};
-					61FF60FD2DE65867004CB07E = {
+					61FF61302DE65D76004CB07E = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 61FF60E52DE65866004CB07E;
+						TestTargetID = 61FF61192DE65D75004CB07E;
 					};
 				};
 			};
-			buildConfigurationList = 61FF60E12DE65866004CB07E /* Build configuration list for PBXProject "BrioCheck" */;
+			buildConfigurationList = 61FF61152DE65D75004CB07E /* Build configuration list for PBXProject "BrioCheck" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 61FF60DD2DE65866004CB07E;
+			mainGroup = 61FF61112DE65D75004CB07E;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = 61FF60E72DE65866004CB07E /* Products */;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 61FF614E2DE65D77004CB07E /* Products */;
-					ProjectRef = 61FF614D2DE65D77004CB07E /* BrioCheck.xcodeproj */;
-				},
+			packageReferences = (
+				617330152DEA4D8F001657D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 61FF611B2DE65D75004CB07E /* Products */;
+			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61FF60E52DE65866004CB07E /* BrioCheck */,
-				61FF60F32DE65867004CB07E /* BrioCheckTests */,
-				61FF60FD2DE65867004CB07E /* BrioCheckUITests */,
+				61FF61192DE65D75004CB07E /* BrioCheck */,
+				61FF61262DE65D76004CB07E /* BrioCheckTests */,
+				61FF61302DE65D76004CB07E /* BrioCheckUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		61FF60E42DE65866004CB07E /* Resources */ = {
+		61FF61182DE65D75004CB07E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FF60F22DE65867004CB07E /* Resources */ = {
+		61FF61252DE65D76004CB07E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FF60FC2DE65867004CB07E /* Resources */ = {
+		61FF612F2DE65D76004CB07E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,21 +252,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		61FF60E22DE65866004CB07E /* Sources */ = {
+		61FF61162DE65D75004CB07E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FF60F02DE65867004CB07E /* Sources */ = {
+		61FF61232DE65D76004CB07E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FF60FA2DE65867004CB07E /* Sources */ = {
+		61FF612D2DE65D76004CB07E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,20 +276,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		61FF60F62DE65867004CB07E /* PBXTargetDependency */ = {
+		61FF61292DE65D76004CB07E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 61FF60E52DE65866004CB07E /* BrioCheck */;
-			targetProxy = 61FF60F52DE65867004CB07E /* PBXContainerItemProxy */;
+			target = 61FF61192DE65D75004CB07E /* BrioCheck */;
+			targetProxy = 61FF61282DE65D76004CB07E /* PBXContainerItemProxy */;
 		};
-		61FF61002DE65867004CB07E /* PBXTargetDependency */ = {
+		61FF61332DE65D76004CB07E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 61FF60E52DE65866004CB07E /* BrioCheck */;
-			targetProxy = 61FF60FF2DE65867004CB07E /* PBXContainerItemProxy */;
+			target = 61FF61192DE65D75004CB07E /* BrioCheck */;
+			targetProxy = 61FF61322DE65D76004CB07E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		61FF61062DE65867004CB07E /* Debug */ = {
+		61FF61392DE65D76004CB07E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,16 +342,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		61FF61072DE65867004CB07E /* Release */ = {
+		61FF613A2DE65D76004CB07E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,92 +400,76 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		61FF61092DE65867004CB07E /* Debug */ = {
+		61FF613C2DE65D76004CB07E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BrioCheck/BrioCheck.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = W8A3ZQRY7F;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abosh.brio.BrioCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		61FF610A2DE65867004CB07E /* Release */ = {
+		61FF613D2DE65D76004CB07E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BrioCheck/BrioCheck.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = W8A3ZQRY7F;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abosh.brio.BrioCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		61FF610C2DE65867004CB07E /* Debug */ = {
+		61FF613F2DE65D76004CB07E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,21 +478,17 @@
 				DEVELOPMENT_TEAM = W8A3ZQRY7F;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abosh.brio.BrioCheckTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrioCheck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrioCheck";
-				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Debug;
 		};
-		61FF610D2DE65867004CB07E /* Release */ = {
+		61FF61402DE65D76004CB07E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,104 +497,114 @@
 				DEVELOPMENT_TEAM = W8A3ZQRY7F;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abosh.brio.BrioCheckTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrioCheck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrioCheck";
-				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Release;
 		};
-		61FF610F2DE65867004CB07E /* Debug */ = {
+		61FF61422DE65D76004CB07E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W8A3ZQRY7F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abosh.brio.BrioCheckUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BrioCheck;
-				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Debug;
 		};
-		61FF61102DE65867004CB07E /* Release */ = {
+		61FF61432DE65D76004CB07E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W8A3ZQRY7F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abosh.brio.BrioCheckUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BrioCheck;
-				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61FF60E12DE65866004CB07E /* Build configuration list for PBXProject "BrioCheck" */ = {
+		61FF61152DE65D75004CB07E /* Build configuration list for PBXProject "BrioCheck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61FF61062DE65867004CB07E /* Debug */,
-				61FF61072DE65867004CB07E /* Release */,
+				61FF61392DE65D76004CB07E /* Debug */,
+				61FF613A2DE65D76004CB07E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61FF61082DE65867004CB07E /* Build configuration list for PBXNativeTarget "BrioCheck" */ = {
+		61FF613B2DE65D76004CB07E /* Build configuration list for PBXNativeTarget "BrioCheck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61FF61092DE65867004CB07E /* Debug */,
-				61FF610A2DE65867004CB07E /* Release */,
+				61FF613C2DE65D76004CB07E /* Debug */,
+				61FF613D2DE65D76004CB07E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61FF610B2DE65867004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckTests" */ = {
+		61FF613E2DE65D76004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61FF610C2DE65867004CB07E /* Debug */,
-				61FF610D2DE65867004CB07E /* Release */,
+				61FF613F2DE65D76004CB07E /* Debug */,
+				61FF61402DE65D76004CB07E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61FF610E2DE65867004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckUITests" */ = {
+		61FF61412DE65D76004CB07E /* Build configuration list for PBXNativeTarget "BrioCheckUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61FF610F2DE65867004CB07E /* Debug */,
-				61FF61102DE65867004CB07E /* Release */,
+				61FF61422DE65D76004CB07E /* Debug */,
+				61FF61432DE65D76004CB07E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		617330152DEA4D8F001657D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		617330162DEA4D8F001657D0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 617330152DEA4D8F001657D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		617330182DEA4D8F001657D0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 617330152DEA4D8F001657D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 61FF60DE2DE65866004CB07E /* Project object */;
+	rootObject = 61FF61122DE65D75004CB07E /* Project object */;
 }

@@ -1,14 +1,13 @@
-//
-//  BrioCheckApp.swift
-//  BrioCheck
-//
-//  Created by Abosh Upadhyaya on 5/27/25.
-//
-
 import SwiftUI
+import FirebaseCore
 
 @main
 struct BrioCheckApp: App {
+    init() {
+        FirebaseApp.configure()
+        UIView.appearance().overrideUserInterfaceStyle = .light
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
