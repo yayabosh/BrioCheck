@@ -67,3 +67,5 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+BrioCheck/BrioCheck/GoogleService-Info.plist
