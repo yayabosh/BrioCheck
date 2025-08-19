@@ -5,7 +5,7 @@ struct Player: Identifiable, Equatable {
     var name: String
     var status: Status
     var reason: String?
-    var time: Date? = nil
+    var time: Date = Calendar.current.date(bySettingHour: 17, minute: 0, second: 0, of: Date())!
 
     enum Status: String, Codable {
         case coming
@@ -19,10 +19,8 @@ struct Player: Identifiable, Equatable {
             "status": status.rawValue,
             "reason": reason ?? NSNull()
         ]
-        if let time = time {
-            let formatter = ISO8601DateFormatter()
-            dict["time"] = formatter.string(from: time)
-        }
+        let formatter = ISO8601DateFormatter()
+        dict["time"] = formatter.string(from: time)
         return dict
     }
 
@@ -33,14 +31,20 @@ struct Player: Identifiable, Equatable {
             return nil
         }
         let reason = dict["reason"] as? String
-        var time: Date? = nil
-        if let timeString = dict["time"] as? String {
-            let formatter = ISO8601DateFormatter()
-            time = formatter.date(from: timeString)
+
+        let formatter = ISO8601DateFormatter()
+        let defaultTime = Calendar.current.date(bySettingHour: 17, minute: 0, second: 0, of: Date())!
+        let time: Date
+        if let timeString = dict["time"] as? String,
+           let parsedTime = formatter.date(from: timeString) {
+            time = parsedTime
+        } else {
+            time = defaultTime
         }
+
         return Player(name: name, status: status, reason: reason, time: time)
     }
-    
+
     static func == (lhs: Player, rhs: Player) -> Bool {
         lhs.id == rhs.id &&
         lhs.name == rhs.name &&
@@ -97,27 +101,6 @@ struct SplashView: View {
     }
 }
 
-struct HowToUseView: View {
-    var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-                    Label("Tap the 🏀✅ logo at the top to reset your name.", systemImage: "person.crop.circle.badge.xmark")
-                    Label("Choose an emoji to set your status:", systemImage: "hand.tap")
-                    Text("✅ = Coming\n🤔 = Maybe\n🦆 = Not Coming")
-                        .padding(.leading, 24)
-                        .foregroundColor(.secondary)
-                    
-                    Label("If you’re coming, set your arrival time with the clock picker.", systemImage: "clock")
-                }
-                .padding()
-            }
-            .navigationTitle("How to Use")
-            .navigationBarTitleDisplayMode(.inline)
-        }
-    }
-}
-
 struct ContentView: View {
     @State private var name: String = ""
     @State private var nameSet: Bool = false
@@ -126,7 +109,22 @@ struct ContentView: View {
     @State private var showSplash = true  // Splash screen control
     @StateObject var firestore = FirestoreManager()
     @FocusState private var isNameFieldFocused: Bool
-    
+
+    var sortedPlayers: [Player] {
+        players.sorted {
+            if $0.status == .coming && $1.status == .coming {
+                if $0.time == $1.time {
+                    return $0.name.lowercased() < $1.name.lowercased()
+                }
+                return $0.time < $1.time
+            } else if $0.status.sortOrder == $1.status.sortOrder {
+                return $0.name.lowercased() < $1.name.lowercased()
+            } else {
+                return $0.status.sortOrder < $1.status.sortOrder
+            }
+        }
+    }
+
     var body: some View {
         Group {
             if showSplash {
@@ -159,7 +157,7 @@ struct ContentView: View {
             VStack(spacing: 20) {
                 if !nameSet {
                     LogoView()
-                    
+
                     VStack {
                         VStack(spacing: 4) {
                             Text("Welcome to")
@@ -170,21 +168,19 @@ struct ContentView: View {
                                 .fontWeight(.bold)
                         }
                         .padding(.bottom, 10)
-                        
+
                         TextField("Enter your name", text: $name)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.vertical, 10)
                             .padding(.horizontal)
                             .disableAutocorrection(true)
                             .focused($isNameFieldFocused)
-                        
+
                         Button("Continue") {
-                            if let existingPlayer = players.first(where: { $0.name == name }), let existingTime = existingPlayer.time {
-                                arrivalTime = existingTime
+                            if let existingPlayer = players.first(where: { $0.name == name }) {
+                                arrivalTime = existingPlayer.time
                             }
                             nameSet = true
-
-                            // Save name to UserDefaults
                             UserDefaults.standard.set(name, forKey: "playerName")
                         }
                         .padding()
@@ -219,13 +215,6 @@ struct ContentView: View {
                                 Text("Nobody’s coming yet 😢")
                                     .foregroundColor(.gray)
                             } else {
-                                let sortedPlayers = players.sorted {
-                                    if $0.status.sortOrder == $1.status.sortOrder {
-                                        return $0.name.lowercased() < $1.name.lowercased()
-                                    } else {
-                                        return $0.status.sortOrder < $1.status.sortOrder
-                                    }
-                                }
                                 ForEach(sortedPlayers) { player in
                                     VStack(alignment: .leading, spacing: 2) {
                                         HStack {
@@ -234,8 +223,8 @@ struct ContentView: View {
                                             Spacer(minLength: 8)
                                             Text(statusEmoji(for: player.status))
                                         }
-                                        if let time = player.time, player.status == .coming {
-                                            Text("Arriving at \(formattedTime(from: time))")
+                                        if player.status == .coming {
+                                            Text("Arriving at \(formattedTime(from: player.time))")
                                                 .font(.caption)
                                                 .foregroundColor(.gray)
                                         }
